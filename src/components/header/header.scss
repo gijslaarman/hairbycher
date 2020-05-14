@@ -16,22 +16,22 @@ header.navigation {
     transform: translate(0, 100%);
     position: absolute;
     padding: 1em;
-    background: $color-white;
-    box-shadow: $shadow-subtle;
+    background: $color-green;
     width: 100%;
     padding-bottom: .5em;
 
     a {
+      color: $color-white;
       text-transform: uppercase;
       display: block;
       text-decoration: none;
       letter-spacing: 1px;
       font-size: 1.25em;
       padding: 1em 0;
-      border-bottom: 1px solid $color-grey;
+      border-bottom: 1px solid #CFE6E0;
 
       span {
-        border-bottom: 1px solid $color-green;
+        border-bottom: 1px solid $color-white;
       }
 
       &:last-of-type {
