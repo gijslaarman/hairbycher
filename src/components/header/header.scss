@@ -1,0 +1,36 @@
+header#navigation {
+  background-color: $color-green;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid $color-light-green;
+  padding-right: .5em;
+  align-items: center;
+  max-height: 4em;
+  position: sticky;
+  top: 0;
+
+  nav {
+    display: none;
+  }
+}
+
+.header-logo {
+  img {
+    height: 3.5em;
+    width: auto;
+    padding: .5em;
+  }
+}
+
+button#menu {
+  color: $color-white;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid $color-white;
+  border-radius: .25em;
+  background-color: transparent;
+  padding: .3em .75em;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}

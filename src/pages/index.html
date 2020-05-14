@@ -1,7 +1,15 @@
 {% extends 'layouts/default.html' %}
+{% from '../components/top-banner/top-banner.html' import topBannerImg %}
+
+{% block aboveHeader %}
+  {% call topBannerImg('/img/PNGWHITE_LogoHairByCher.png', 'Excellent hair care', 'small')%}
+  {% endcall %}
+{% endblock %}
 
 {% block content %}
 
-<h1>Hello world!</h1>
+<section>
+  <p>Hair by Cher is gespecialiseerd in het verzorgen van uw haar op een manier dat het perfect bij uw uitstraling en persoonlijkheid past. Wij staan vooral bekend om onze Weave, Interlock en Extensions.</p>
+</section>
 
 {% endblock %}

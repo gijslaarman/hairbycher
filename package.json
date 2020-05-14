@@ -9,9 +9,14 @@
   "distFolder": "/dist",
   "scripts": {
     "prebuild": "npm run build-js && npm run build-css",
-    "build": "node src/build.js",
+    "build": "npm run build-html",
+    "build-html": "node src/build.js",
     "build-js": "rollup --config src/assets/js/rollup.config.js",
-    "build-css": "node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js src/assets/scss/main.scss dist/styles.min.css --output-style compressed"
+    "build-css": "node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js src/assets/scss/main.scss dist/styles.min.css --output-style compressed",
+    "dev": "npm run watch",
+    "move-fonts": "ncp src/assets/fonts dist/fonts",
+    "move-images": "ncp src/assets/images dist/images",
+    "watch": "chokidar '**/*.js' -c 'npm run build-js' --ignore 'dist/**/*.js' --ignore 'src/helpers/**/*'  --ignore 'node_modules/.cache/**/*' & chokidar '**/*.html' -c 'npm run build-html' --ignore 'dist/**/*.html' & chokidar '**/*.scss' -c 'npm run build-css' & chokidar 'src/assets/fonts/*' -c 'npm run move-fonts' --throttle 5000 & chokidar 'src/assets/images/*' -c 'npm run move-images' --throttle 5000"
   },
   "keywords": [
     "node",
@@ -30,7 +35,10 @@
     "@rollup/plugin-alias": "^3.1.0",
     "@rollup/plugin-babel": "^5.0.0",
     "@rollup/plugin-node-resolve": "^7.1.3",
+    "chokidar-cli": "^2.1.0",
     "cpx": "^1.5.0",
+    "del-cli": "^3.0.0",
+    "ncp": "^2.0.0",
     "node-sass": "^4.14.1",
     "node-sass-glob-importer": "^5.3.2",
     "rollup": "^2.9.1",
