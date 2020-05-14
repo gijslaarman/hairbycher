@@ -1,15 +1,16 @@
 {% from '../../components/header/header.html' import header %}
 {% from '../../components/footer/footer.html' import footer %}
+{% set pageDescription = description %}
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A site generated with Nunjucks" />
+    <meta name="description" content="{{pageDescription}}" />
     <link rel="stylesheet" href="styles.min.css" />
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
-    <title>Hair by Cher</title>
+    <title>Hair by Cher: Excellent hair care</title>
   </head>
 
   <body>

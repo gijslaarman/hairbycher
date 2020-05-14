@@ -3,23 +3,36 @@ $nav-links: 5;
 header.navigation {
   background-color: $color-green;
   border-bottom: 2px solid $color-light-green;
-  -webkit-transition: all 0.5s ease-out, background 1s ease-out;
-  transition: all 0.5s ease-out, background 1s ease-out;
+  -webkit-transition: height 0.5s ease-out;
+  transition: height 0.5s ease-out;
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
   z-index: 1;
   height: 3.625em;
   overflow: hidden;
 
+  .inner {
+    max-width: 60em;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .top {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     padding-right: 0.5em;
+    padding-bottom: 1em;
+    z-index: 9;
+    width: 100%;
   }
 
   .menu {
-    padding: 2em 1em;
+    padding: 1em 1em;
+    width: 100%;
   }
 
   .menu-item {
@@ -44,7 +57,7 @@ header.navigation {
       letter-spacing: 1px;
       font-size: 1.25em;
       padding: 1em 0;
-      border-bottom: 1px solid #cfe6e0;
+      border-bottom: 1px solid #6C968D;
     }
 
     @for $i from 1 through $nav-links {
@@ -54,29 +67,6 @@ header.navigation {
     }
   }
 }
-
-// nav {
-//   display: none;
-//   overflow: hidden;
-//   padding: 1em;
-//   background: $color-green;
-//   width: 100%;
-//   padding-bottom: 0.5em;
-//   transition: all 0.3s ease-in;
-//   height: 0px;
-
-//   a {
-//
-
-//     span {
-//       border-bottom: 1px solid $color-white;
-//     }
-
-//     &:last-of-type {
-//       border-bottom: none;
-//     }
-//   }
-// }
 
 .header-logo {
   img {
@@ -163,4 +153,46 @@ button {
       }
     }
   }
+}
+
+@media (min-width: 24em) {
+  header.navigation {
+    .top {
+      padding-right: 1em;
+      padding-left: 0.5em;
+    }
+  }
+}
+
+@media (min-width: 50em) {
+  header.navigation {
+    display: flex;
+    height: 3.625em !important;
+
+    .inner {
+      flex-wrap: nowrap;
+    }
+
+    label {
+      display: none;
+    }
+
+    nav {
+      flex: 1 1 100%;
+      display: flex !important;
+      flex-direction: row-reverse;
+    }
+
+    .menu-item {
+      transition: none;
+      transform: none;
+      opacity: 1;
+      margin: 0 0.5em;
+
+      a {
+        padding: 0;
+      }
+    }
+  }
+
 }

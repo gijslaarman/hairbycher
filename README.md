@@ -2,7 +2,7 @@
 # Hair by cher
 
 ## To do's
-- [ ] Responsive menu.
+- [x] Responsive menu.
 - [ ] Mobile first layout.
 - [ ] Scale up towards bigger screen format layouts > make responsive.
 - [ ] Add content other pages.

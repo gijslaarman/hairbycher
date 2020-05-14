@@ -2,6 +2,7 @@
   {
     "page": "index",
     "template": "index.html",
-    "route": "/"
+    "route": "/",
+    "pageDescription": "Hair by Cher is gespecialiseerd in het verzorgen van uw haar op een manier die perfect bij uw uitstraling en persoonlijkheid past. De Clercqstraat 20 1052 ND Amsterdam."
   }
 ]

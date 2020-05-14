@@ -14,7 +14,10 @@ nunjuckStatic.config({
 cpx.copy(path.resolve(`${__dirname}/assets/copy/**`), distFolder)
 
 pages.forEach(page => {
-  const pageDetails = {}
+  const pageDetails = {
+    description: page.pageDescription
+  }
+
   nunjuckStatic.generate(page.template, pageDetails, page.route)
 })
 
