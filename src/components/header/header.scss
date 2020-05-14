@@ -1,4 +1,4 @@
-header#navigation {
+header.navigation {
   background-color: $color-green;
   display: flex;
   justify-content: space-between;
@@ -8,9 +8,36 @@ header#navigation {
   max-height: 4em;
   position: sticky;
   top: 0;
+  z-index: 9;
 
   nav {
     display: none;
+    bottom: 0;
+    transform: translate(0, 100%);
+    position: absolute;
+    padding: 1em;
+    background: $color-white;
+    box-shadow: $shadow-subtle;
+    width: 100%;
+    padding-bottom: .5em;
+
+    a {
+      text-transform: uppercase;
+      display: block;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-size: 1.25em;
+      padding: 1em 0;
+      border-bottom: 1px solid $color-grey;
+
+      span {
+        border-bottom: 1px solid $color-green;
+      }
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
   }
 }
 
@@ -22,7 +49,7 @@ header#navigation {
   }
 }
 
-button#menu {
+button {
   color: $color-white;
   font-family: 'Montserrat', sans-serif;
   border: 1px solid $color-white;
@@ -33,4 +60,49 @@ button#menu {
   font-size: 1em;
   font-weight: 700;
   letter-spacing: 1px;
+  transition: 200ms;
+}
+
+.responsive-header-no-js {
+  input[type=checkbox] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+
+  label[for] {
+    position: relative;
+    &:after {
+      content: "";
+      top: 0;left: 0;right: 0; bottom: 0;
+      position: absolute;
+      background-color: transparent;
+    }
+  }
+
+  .no-js-btn {
+    pointer-events: fill;
+  }
+
+  .no-js-btn.open {
+    display: block;
+  }
+  .no-js-btn.close {
+    display: none;
+  }
+
+  input[type=checkbox]:checked {
+    &~label .no-js-btn.open {
+      display: none;
+    }
+
+    &~label .no-js-btn.close {
+      display: block;
+    }
+
+    &~nav {
+      display: block;
+    }
+  }
 }

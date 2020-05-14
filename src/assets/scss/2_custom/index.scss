@@ -1,0 +1,25 @@
+.instagram {
+  border-bottom: 2px solid $color-green;
+}
+
+.cta {
+  letter-spacing: 2px;
+  font-family: "Lemon/Milk light Regular", sans-serif;
+  display: block;
+  background-color: $color-green;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.25em;
+  padding: 1em;
+  border-radius: .5em;
+  box-shadow: $shadow-subtle;
+  margin-top: 1.25em;
+
+  span {
+    opacity: .6;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}

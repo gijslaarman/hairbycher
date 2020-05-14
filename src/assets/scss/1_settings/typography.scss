@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Lemon/Milk light Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lemon/Milk light Regular"),
+    url("/fonts/LemonMilklight.woff") format("woff");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lemon/Milk light Regular", sans-serif;
+  letter-spacing: 2px;
+}
+
+h2 {
+  color: $color-green;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+
+.center {
+  text-align: center;
+}
+
+p, li, label, input, a {
+  color: $color-black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: $color-green;
+
+  img {
+    height: 1em;
+    display: inline;
+    vertical-align: middle;
+    width: unset;
+    padding-right: .75em;
+  }
+}

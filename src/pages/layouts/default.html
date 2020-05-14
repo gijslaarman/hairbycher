@@ -1,4 +1,5 @@
 {% from '../../components/header/header.html' import header %}
+{% from '../../components/footer/footer.html' import footer %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,6 +23,9 @@
       {% block content %} {% endblock %}
     </main>
 
-    <footer></footer>
+    {% call footer() %}
+    {% endcall %}
+
+    <script src="main.js"></script>
   </body>
 </html>

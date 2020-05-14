@@ -1,13 +1,23 @@
 {% macro header(data) %}
-<header id="navigation">
+
+<header class="responsive-header-no-js navigation">
   <a class="header-logo" href="/">
-    <img src="/img/logo_small.png" alt="Logo: klavertjevier">
+    <img src="/img/Clover_HairByCher_White.svg" alt="Logo: klavertjevier">
   </a>
+  
+  <input type="checkbox" id="menu-toggle nav-menu">
+  <label for="nav-menu" id="no-js-btn-label">
+    <button class="no-js-btn open">Menu</button>
+    <button class="no-js-btn close">sluiten</button>
+  </label>
 
   <nav>
-    <a href="/">Home</a>
+    <a href="/"><span>Home</span></a>
+    <a href="/behandelingen"><span>Behandelingen</span></a>
+    <a href="/producten"><span>Producten</span></a>
+    <a href="/prijzen"><span>Prijzen</span></a>
+    <a href="/contact"><span>Contact</span></a>
   </nav>
-  
-  <button id="menu">Menu</button>
+
 </header>
 {% endmacro %}

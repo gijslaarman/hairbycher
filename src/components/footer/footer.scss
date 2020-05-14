@@ -1,0 +1,55 @@
+footer {
+  background-color: $color-black;
+  border-top: 2px solid $color-grey;
+  padding: 3em 1em;
+  margin-top: 5em;
+  color: $color-white;
+
+  ul {
+    padding-left: 1em;
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+
+  a {
+    display: inline-block;
+    color: $color-white;
+    padding: 1em;
+  }
+
+  p {
+    margin-top: 2em;
+    color: $color-white;
+    opacity: .75;
+  }
+
+  img {
+    margin-top: 3em;
+    width: 7em;
+    margin: 0 auto;
+  }
+}
+
+li.icon {
+  position: relative;
+
+  a {
+    margin-left: 1em;
+  }
+
+  &:before {
+    position: absolute;
+    top: 1em;
+    left: 0;
+  }
+
+  &.phone:before {
+    content: url('/img/phone.svg');
+  }
+  &.at:before {
+    content: url('/img/at.svg');
+  }
+  &.map-marker:before {
+    content: url('/img/map_marker.svg');
+  }
+}
