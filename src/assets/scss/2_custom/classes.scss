@@ -23,3 +23,15 @@
     font-weight: 400;
   }
 }
+
+.fluid {
+  margin-left: -1em;
+  margin-right: -1em;
+}
+
+@media (min-width: 60em) {
+  .fluid {
+    margin-left: -3em;
+    margin-right: -3em;
+  }
+}

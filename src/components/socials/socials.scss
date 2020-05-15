@@ -1,0 +1,17 @@
+.socials {
+  a {
+    padding: 1em;
+    background-color: white;
+    border-radius: .75em;
+    box-shadow: $shadow-subtle;
+    background-color: $color-superlight;
+    display: inline-block;
+    margin-right: 1em;
+
+    img {
+      width: 2em;
+      height: 2em;
+      padding: 0;
+    }
+  }
+}

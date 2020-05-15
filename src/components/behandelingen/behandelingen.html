@@ -1,0 +1,24 @@
+{% macro behandelingen(tabs) %}
+<div class="tab-container">
+  {% for tab in tabs %}
+
+  {% set checked = 'checked' if tab.checked %}
+
+  <input type="radio" name="behandelingen_tabs" id="{{tab.name}}" {{checked}} />
+  {% endfor %}
+
+  <div class="tabs">
+    {% for tab in tabs %}
+    <label class="tab" for="{{tab.name}}">{{tab.title}}</label>
+    {% endfor %}
+  </div>
+
+  <div class="tab-content">
+    {% for tab in tabs %}
+    <div class="{{tab.name}}">
+      {{ tab.html | safe }}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endmacro %}

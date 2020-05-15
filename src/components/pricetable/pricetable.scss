@@ -1,0 +1,51 @@
+.pricetable {
+  overflow-x: scroll;
+  margin: 2em -1em;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: $color-superlight;
+
+    tr {
+      border-bottom: 1px solid $color-light-green;
+
+      &.bold {
+        border: none;
+
+        td {
+          padding-bottom: 0;
+          color: $color-green;
+        }
+
+        & + tr td {
+          padding-top: 0.25em;
+        }
+      }
+
+      &.break {
+        height: 1em;
+      }
+    }
+
+    th {
+      padding: 1em;
+      background-color: $color-green;
+      color: $color-white;
+      font-size: 1.125em;
+    }
+
+    td {
+      padding: 1em;
+
+      &:first-of-type {
+        font-weight: bold;
+      }
+    }
+
+    th,
+    td {
+      text-align: left;
+    }
+  }
+}

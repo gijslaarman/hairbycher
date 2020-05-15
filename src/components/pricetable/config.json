@@ -1,0 +1,132 @@
+[
+  {
+    "type": "head",
+    "head": true,
+    "columns": ["Behandeling", "€"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Puntjes knippen", "27,50"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Model knippen", "32,50"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Wassen/Fohnen/Tangen", "37,50"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Wassen/Fohnen/Steampod", "42,50"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Wassen/Fohnen/Knippen/Tangen", "52,50"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Wassen/Fohnen/Knippen/Steampod", "57,50"]
+  },
+  {
+    "type": "break",
+    "class": "break",
+    "head": false
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Uitgroei verven", "40,-"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Spoeling/Toner", "40,-"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Verven", "60,-"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["HighLights/Lowlights (Kwart)", "50,-"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["HighLights/Lowlights (Half)", "70,-"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["HighLights/Lowlights (Heel)", "125,-"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Balayage", "130,-"]
+  },
+  {
+    "head": false,
+    "class": "break",
+    "type": "break"
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Relaxen incl.Wassen/Fohnen/Tangen", "100,-"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Keratine", "v.a. 125,-"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Weave excl.Wassen/Fohnen/Tangen", "120,-"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Weave uithalen", "30,-"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Vlechten (per uur)", "40,-"]
+  },
+  {
+    "head": false,
+    "class": "break",
+    "type": "break"
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Olaplex behandeling", "37,50"]
+  },
+  {
+    "head": false,
+    "type": "break"
+  },
+  {
+    "type": "row",
+    "head": false,
+    "class": "bold",
+    "columns": ["*Specialiteit"]
+  },
+  {
+    "type": "row",
+    "head": false,
+    "columns": ["Interlock. (per baan)", "20,-"]
+  }
+]

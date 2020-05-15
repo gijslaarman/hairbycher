@@ -1,0 +1,21 @@
+{% macro pricetable(prices) %}
+<div class="pricetable">
+  <table>
+    {% for row in prices %}
+
+    <tr class="{{row.class}}">
+      {% for column in row.columns %} {% if row.head %}
+      <th>{{column}}</th>
+      {% else %}
+      <td>{{column}}</td>
+      {% endif %} {% endfor %}
+    </tr>
+
+    {% endfor %}
+  </table>
+</div>
+<p>
+  Bij het niet afmelden van uw afspraak binnen 24 uur, zijn wij genoodzaakt 50%
+  van de behandeling in rekening te brengen!
+</p>
+{% endmacro %}

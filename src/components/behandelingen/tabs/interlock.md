@@ -1,0 +1,5 @@
+Het verschil tussen Interlock en Weave is dat onze Interlock techniek direct uw eigen haar integreert met losse haarstroken zonder tussenkomst van een zogenaamde weft (haar dat eerst op een strip genaaid is).
+
+Interlock geeft uw haar een mooie, natuurlijke "free-flowing" uitstraling. Onze klanten geven aan dat Interlock fijner aanvoelt, vanwege het ontbreken van de weft, waardoor het haar vrij kan ademen.
+
+<img src="/img/interlock.jpg" alt="Haarmodel die interlock demonstreet."/>

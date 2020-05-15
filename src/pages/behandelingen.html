@@ -1,0 +1,25 @@
+{% extends 'layouts/default.html' %}
+{% from '../components/behandelingen/behandelingen.html' import behandelingen %}
+
+{% block content %}
+<section>
+  <h1>Behandelingen</h1>
+  <p>Bij Hair by Cher zijn wij gespecialiseerd in het verlengen van uw haar. Daartoe gebruiken wij verschillende technieken toepasbaar op alle haartypen.</p>
+</section>
+
+<section class="fluid">
+  {% call behandelingen(tabs) %}
+  {% endcall %}
+</section>
+
+<section>
+  <h2 class="center">Afspraak maken?</h2>
+  <p>Neem dan contact op, geef uw gewenste datum en tijdstip door.</p>
+
+  <a href="tel:+31621917818" class="cta">
+    <img src="/img/phone.svg" alt="icoon telefoon">
+    Bel
+    <span>(06 21 91 78 18)</span>
+  </a>
+</section>
+{% endblock %}

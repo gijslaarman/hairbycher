@@ -4,5 +4,49 @@
     "template": "index.html",
     "route": "/",
     "pageDescription": "Hair by Cher is gespecialiseerd in het verzorgen van uw haar op een manier die perfect bij uw uitstraling en persoonlijkheid past. De Clercqstraat 20 1052 ND Amsterdam."
+  },
+  {
+    "page": "behandelingen",
+    "template": "behandelingen.html",
+    "route": "/behandelingen",
+    "pageDescription": "Bij Hair by Cher zijn wij gespecialiseerd in het verlengen van uw haar. Daartoe gebruiken wij verschillende technieken toepasbaar op alle haartypen. De Clercqstraat 20 1052 ND Amsterdam.",
+    "tabs": [
+      {
+        "name": "weaves",
+        "title": "Weaves",
+        "imageSrc": "/img/weave.jpg",
+        "markdown": "./src/components/behandelingen/tabs/weave.md",
+        "checked": true
+      },
+      {
+        "name": "interlock",
+        "title": "Interlock",
+        "imageSrc": "/img/interlock.jpg",
+        "markdown": "./src/components/behandelingen/tabs/interlock.md"
+      },
+      {
+        "name": "extensions",
+        "title": "Extensions",
+        "imageSrc": "/img/great_length.jpg",
+        "markdown": "./src/components/behandelingen/tabs/extensions.md"
+      }
+    ]
+  },
+  {
+    "page": "producten",
+    "template": "producten.html",
+    "route":"/producten"
+  },
+  {
+    "page": "contact",
+    "template": "contact.html",
+    "route":"/contact",
+    "socials": "./components/socials/config.json"
+  },
+  {
+    "page": "prijzen",
+    "template": "prijzen.html",
+    "route":"/prijzen",
+    "prices": "./components/pricetable/config.json"
   }
 ]

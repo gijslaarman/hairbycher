@@ -1,0 +1,36 @@
+{% extends 'layouts/default.html' %} {% block content %} 
+{% from '../components/socials/socials.html' import socials %}
+
+<section>
+  <h1>Contact opnemen</h1>
+  <p>Geef uw gewenste datum & tijdstip door.</p>
+
+  <a href="tel:+31621917818" class="cta">
+    <img src="/img/phone.svg" alt="icoon telefoon" />
+    Bel
+    <span>(06 21 91 78 18)</span>
+  </a>
+  <a href="mailto:info@hairbycher.nl" class="cta">
+    <img src="/img/at.svg" alt="icoon apenstaartje" />
+    Mailen
+    <span>(info@hairbycher.nl)</span>
+  </a>
+</section>
+<section>
+  <h2>Volg ons</h2>
+  {% call socials(socialIcons) %} {% endcall %}
+</section>
+<section>
+  <h2>Locatie</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.4903991992874!2d4.859088616523335!3d52.37965977978778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa65c7993617dca06!2sHair%20by%20Cher!5e0!3m2!1sen!2snl!4v1589555264448!5m2!1sen!2snl"
+    width="100%"
+    height="450"
+    frameborder="0"
+    style="border: 0;"
+    allowfullscreen=""
+    aria-hidden="false"
+    tabindex="0"
+  ></iframe>
+</section>
+{% endblock %}

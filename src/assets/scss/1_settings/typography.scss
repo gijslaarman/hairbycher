@@ -14,21 +14,21 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lemon/Milk light Regular", sans-serif;
+  font-family: "Lemon/Milk light Regular", 'Montserrat', sans-serif;
   letter-spacing: 2px;
+  margin-bottom: 1em;
 }
 
 h2 {
   color: $color-green;
   font-size: 1.25em;
-  margin-bottom: 1em;
 }
 
 .center {
   text-align: center;
 }
 
-p, li, label, input, a {
+p, li, label, input, a, figcaption, th, td {
   color: $color-black;
   font-family: 'Montserrat', sans-serif;
 }
@@ -46,5 +46,11 @@ a {
     vertical-align: middle;
     width: unset;
     padding-right: .75em;
+  }
+}
+
+@media (min-width: 40em) {
+  p, li, label, input, a {
+    font-size: 18px;
   }
 }
