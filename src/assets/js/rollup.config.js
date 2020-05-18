@@ -9,7 +9,7 @@ const config = {
     {
       file: "dist/main.js",
       format: "cjs",
-    },
+    }
   ],
   plugins: [
     resolve(),

@@ -12,10 +12,17 @@
   <p>Hair by Cher is gespecialiseerd in het verzorgen van uw haar op een manier dat het perfect bij uw uitstraling en persoonlijkheid past. Wij staan vooral bekend om onze <a href="#">Weave</a>, <a href="#">Interlock</a> en <a href="#">Extensions</a>.</p>
 </section>
 
-<section class="instagram">
-
-</section>
-
+<section id="instafeed"></section>
+<script src="/instafeed.min.js"></script>
+<script src='https://hairbycher.herokuapp.com/token.js'></script>
+<script>
+var feed = new Instafeed({
+  tagName: "instafeed",
+  userId: "698298977611506",
+  clientId: InstagramToken
+})
+feed.run()
+</script>
 <section>
   <h2 class="center">Afspraak maken?</h2>
   <p>Neem dan contact op, geef uw gewenste datum en tijdstip door.</p>

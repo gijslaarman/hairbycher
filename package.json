@@ -28,6 +28,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "html-minifier": "^4.0.0",
+    "instafeed.js": "^1.4.1",
     "nunjucks": "^3.2.1",
     "showdown": "^1.9.1"
   },

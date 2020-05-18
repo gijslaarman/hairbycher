@@ -26,6 +26,10 @@
       &.break {
         height: 1em;
       }
+
+      &:last-of-type {
+        border: none;
+      }
     }
 
     th {
