@@ -1,5 +1,6 @@
 {% extends 'layouts/default.html' %}
 {% from '../components/header/top-banner.html' import topBannerImg %}
+{% from '../components/instagram/instagram.html' import instagramFeed %}
 
 {% block aboveHeader %}
   {% call topBannerImg('/img/Logo_HairByCher_White.svg', 'Excellent hair care', 'small')%}
@@ -9,19 +10,12 @@
 {% block content %}
 
 <section>
-  <p>Hair by Cher is gespecialiseerd in het verzorgen van uw haar op een manier dat het perfect bij uw uitstraling en persoonlijkheid past. Wij staan vooral bekend om onze <a href="#">Weave</a>, <a href="#">Interlock</a> en <a href="#">Extensions</a>.</p>
+  <p>Hair by Cher is gespecialiseerd in het verzorgen van uw haar op een manier dat het perfect bij uw uitstraling en persoonlijkheid past. Wij staan vooral bekend om onze <a href="/behandelingen/#weave">Weave</a>, <a href="/behandelingen/#interlock">Interlock</a> en <a href="/behandelingen/#keratine">Keratine</a>.</p>
 </section>
 
-<section id="instafeed"></section>
-<script src="/instafeed.min.js"></script>
-<script src='https://hairbycher.herokuapp.com/token.js'></script>
-<script>
-var feed = new Instafeed({
-  tagName: "instafeed",
-  userId: "698298977611506",
-  clientId: InstagramToken
-})
-feed.run()
+{% call instagramFeed(9) %}
+{% endcall %}
+
 </script>
 <section>
   <h2 class="center">Afspraak maken?</h2>

@@ -22,6 +22,7 @@ async function generatePages() {
       page.tabs.map(tab => {
         const markdownFile = fs.readFileSync(tab.markdown, 'utf8')
         tab.html = converter.makeHtml(markdownFile)
+
         return tab
       })
     }

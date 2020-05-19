@@ -1,4 +1,5 @@
 import "@components/header/header";
 import "@components/behandelingen/behandelingen"
-// import "instafeed.js"
-// import "./instafeedConfig.js"
+import "@components/instagram/instagram"
+import "@components/glideSlider/glide"
+console.log('Website created by https://gijsbertcharles.com');

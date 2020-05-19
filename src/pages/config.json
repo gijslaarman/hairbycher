@@ -12,23 +12,62 @@
     "pageDescription": "Bij Hair by Cher zijn wij gespecialiseerd in het verlengen van uw haar. Daartoe gebruiken wij verschillende technieken toepasbaar op alle haartypen. De Clercqstraat 20 1052 ND Amsterdam.",
     "tabs": [
       {
-        "name": "weaves",
-        "title": "Weaves",
-        "imageSrc": "/img/weave.jpg",
+        "name": "weave",
+        "title": "Weave",
         "markdown": "./src/components/behandelingen/tabs/weave.md",
+        "images": [
+          {
+            "src": "/img/weave.jpg",
+            "alt": "Model met weave haar"
+          },
+          {
+            "src": "/img/Img_Producten.jpg",
+            "alt": "Model met weave haar"
+          },
+          {
+            "src": "/img/Img_Producten.jpg",
+            "alt": "Model met weave haar"
+          }
+        ],
         "checked": true
       },
       {
         "name": "interlock",
         "title": "Interlock",
-        "imageSrc": "/img/interlock.jpg",
-        "markdown": "./src/components/behandelingen/tabs/interlock.md"
+        "markdown": "./src/components/behandelingen/tabs/interlock.md",
+        "images": [
+          {
+            "src": "/img/weave.jpg",
+            "alt": "Model met weave haar"
+          },
+          {
+            "src": "/img/Img_Producten.jpg",
+            "alt": "Model met weave haar"
+          },
+          {
+            "src": "/img/Img_Producten.jpg",
+            "alt": "Model met weave haar"
+          }
+        ]
       },
       {
-        "name": "extensions",
-        "title": "Extensions",
-        "imageSrc": "/img/great_length.jpg",
-        "markdown": "./src/components/behandelingen/tabs/extensions.md"
+        "name": "keratine",
+        "title": "Keratine",
+        "markdown": "./src/components/behandelingen/tabs/keratine.md",
+        "images": [
+          {
+            "src": "/img/weave.jpg",
+            "alt": "Model met weave haar"
+          },
+          {
+            "src": "/img/Img_Producten.jpg",
+            "alt": "Model met weave haar"
+          },
+          {
+            "src": "/img/Img_Producten.jpg",
+            "alt": "Model met weave haar"
+          }
+        ]
       }
     ]
   },

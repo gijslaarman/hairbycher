@@ -1,1 +1,0 @@
-"use strict";!function(){const e=document.querySelector("#no-js-btn-label"),o=document.querySelector(".responsive-header-no-js");let t=!1;e.addEventListener("click",(function(){const e=o.offsetTop;t=!t,t&&window.scrollTo({behavior:"smooth",top:e})}))}();

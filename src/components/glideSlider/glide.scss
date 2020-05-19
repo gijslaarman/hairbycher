@@ -1,0 +1,17 @@
+.glide__bullets {
+  bottom: 3em;
+}
+
+.glide__bullet {
+  width: 1em;
+  height: 1em;
+  background-color: #00000070;
+
+  &--active {
+    background-color: #00000090;
+  }
+}
+
+.glide__slides {
+  align-items: center;
+}

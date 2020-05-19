@@ -31,6 +31,7 @@
     box-shadow: $shadow-subtle;
     position: sticky;
     top: 0;
+    z-index: 1;
   }
 
   .tab {
@@ -51,16 +52,22 @@
     }
   }
 
-  #weaves:checked ~ .tabs .tab[for=weaves],
+  .slider {
+    padding-top: 1em;
+    background-color: #00000010;
+    box-shadow: inset 0 4px 14px #00000030;
+  }
+
+  #weave:checked ~ .tabs .tab[for=weave],
   #interlock:checked ~ .tabs .tab[for=interlock],
-  #extensions:checked ~ .tabs .tab[for=extensions] {
+  #keratine:checked ~ .tabs .tab[for=keratine] {
     background-color: $color-white;
     color: $color-green;
   }
 
-  #weaves:checked ~ .tab-content .weaves,
+  #weave:checked ~ .tab-content .weave,
   #interlock:checked ~ .tab-content .interlock,
-  #extensions:checked ~ .tab-content .extensions {
+  #keratine:checked ~ .tab-content .keratine {
     display: block;
   }
 }

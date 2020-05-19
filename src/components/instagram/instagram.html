@@ -1,0 +1,11 @@
+{% macro instagramFeed(amount) %}
+<section class="fluid live-instagram-feed">
+  <h6>@hairbycher</h6>
+  <div class="photos">
+    {% for a in range(amount) %}
+    <div class="photo loading">
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endmacro %}

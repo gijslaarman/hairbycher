@@ -1,6 +1,5 @@
 {% from '../../components/header/header.html' import header %}
 {% from '../../components/footer/footer.html' import footer %}
-{% set pageDescription = description %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,10 +9,11 @@
     <meta name="description" content="{{pageDescription}}" />
     <link rel="stylesheet" href="/styles.min.css" />
     <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+
     <title>Hair by Cher: Excellent hair care</title>
   </head>
 
-  <body>
+  <body id="{{page}}">
     {% block aboveHeader %}
     {% endblock %}
 
@@ -27,6 +27,6 @@
     {% call footer() %}
     {% endcall %}
 
-    <script src="/main.js"></script>
+    <script id="main_js" src="/main.js"></script>
   </body>
 </html>

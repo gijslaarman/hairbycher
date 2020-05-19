@@ -11,12 +11,12 @@ const header = (function() {
     } else {
       open = true
     }
-    
+
     if (open) {
-      window.scrollTo({
+      setTimeout(window.scrollTo({
         behavior: 'smooth',
         top: headerYPos
-      })
+      }),100);
     }
   })
 })()

@@ -1,8 +1,7 @@
+{% from "../glideSlider/glide.html" import glide %} 
 {% macro behandelingen(tabs) %}
 <div class="tab-container">
-  {% for tab in tabs %}
-
-  {% set checked = 'checked' if tab.checked %}
+  {% for tab in tabs %} {% set checked = 'checked' if tab.checked %}
 
   <input type="radio" name="behandelingen_tabs" id="{{tab.name}}" {{checked}} />
   {% endfor %}
@@ -17,6 +16,12 @@
     {% for tab in tabs %}
     <div class="{{tab.name}}">
       {{ tab.html | safe }}
+
+      {% if tab.images %}
+      <div class="slider">
+        {% call glide(tab.images, tab.name) %} {% endcall %}
+      </div>
+      {% endif %}
     </div>
     {% endfor %}
   </div>

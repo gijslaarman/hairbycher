@@ -1,0 +1,18 @@
+{% macro glide(array, name) %}
+<div data-name="{{name}}" class="glide-{{name}}">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      {% for image in array %}
+      <li class="glide__slide">
+        <img src="{{image.src}}" alt="{{image.alt}}">
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="glide__bullets" data-glide-el="controls[nav]">
+    {% for image in array %}
+    <button class="glide__bullet" data-glide-dir="={{loop.index - 1}}"></button>
+    {% endfor %}
+  </div>
+</div>
+{% endmacro %}

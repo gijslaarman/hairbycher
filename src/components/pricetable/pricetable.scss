@@ -3,6 +3,7 @@
   margin: 2em -1em;
 
   table {
+    font-size: 14px;
     width: 100%;
     border-collapse: collapse;
     background-color: $color-superlight;
@@ -24,7 +25,7 @@
       }
 
       &.break {
-        height: 1em;
+        height: 2.5em;
       }
 
       &:last-of-type {
@@ -50,6 +51,14 @@
     th,
     td {
       text-align: left;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .pricetable {
+    table {
+      font-size: 16px;
     }
   }
 }

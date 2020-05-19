@@ -26,9 +26,11 @@
   "author": "Gijs Laarman",
   "license": "ISC",
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "express": "^4.17.1",
     "html-minifier": "^4.0.0",
     "instafeed.js": "^1.4.1",
+    "nanogram.js": "^1.0.1",
     "nunjucks": "^3.2.1",
     "showdown": "^1.9.1"
   },

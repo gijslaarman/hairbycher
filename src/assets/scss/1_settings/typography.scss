@@ -39,6 +39,7 @@ p {
 
 a {
   color: $color-green;
+  transition: color 200ms;
 
   img {
     height: 1em;
@@ -46,6 +47,10 @@ a {
     vertical-align: middle;
     width: unset;
     padding-right: .75em;
+  }
+
+  &:hover {
+    color: $color-action;
   }
 }
 

@@ -2,5 +2,11 @@
 @import "./1_settings/*.scss";
 @import "./2_custom/*.scss";
 
+/* Glidejs */
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 // Import components
 @import "../../components/**/*.scss";
