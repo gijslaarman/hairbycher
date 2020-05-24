@@ -17,15 +17,15 @@
         "markdown": "./src/components/behandelingen/tabs/weave.md",
         "images": [
           {
-            "src": "/img/weave.jpg",
+            "src": "/img/weave_1.jpg",
             "alt": "Model met weave haar"
           },
           {
-            "src": "/img/Img_Producten.jpg",
+            "src": "/img/weave_2.jpg",
             "alt": "Model met weave haar"
           },
           {
-            "src": "/img/Img_Producten.jpg",
+            "src": "/img/weave_3.jpg",
             "alt": "Model met weave haar"
           }
         ],
@@ -37,16 +37,16 @@
         "markdown": "./src/components/behandelingen/tabs/interlock.md",
         "images": [
           {
-            "src": "/img/weave.jpg",
-            "alt": "Model met weave haar"
+            "src": "/img/interlock_1.jpg",
+            "alt": "Model voor interlock"
           },
           {
-            "src": "/img/Img_Producten.jpg",
-            "alt": "Model met weave haar"
+            "src": "/img/interlock_2.jpg",
+            "alt": "Model voor interlock"
           },
           {
-            "src": "/img/Img_Producten.jpg",
-            "alt": "Model met weave haar"
+            "src": "/img/interlock_3.jpg",
+            "alt": "Model voor interlock"
           }
         ]
       },
@@ -56,16 +56,16 @@
         "markdown": "./src/components/behandelingen/tabs/keratine.md",
         "images": [
           {
-            "src": "/img/weave.jpg",
-            "alt": "Model met weave haar"
+            "src": "/img/keratine_1.jpg",
+            "alt": "Model voor Keratine behandeling"
           },
           {
-            "src": "/img/Img_Producten.jpg",
-            "alt": "Model met weave haar"
+            "src": "/img/keratine_2.jpg",
+            "alt": "Model voor Keratine behandeling"
           },
           {
-            "src": "/img/Img_Producten.jpg",
-            "alt": "Model met weave haar"
+            "src": "/img/keratine_3.jpg",
+            "alt": "Model voor Keratine behandeling"
           }
         ]
       }
